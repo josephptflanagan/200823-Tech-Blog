@@ -12,8 +12,10 @@ A CMS-style tech blog similar to a wordpress site where developers can publish t
 ### Installation Instructions
 * Download all files from repository
 * use npm to install dotenv, create a .env file and populate it with:
-* * DB_NAME='just_tech_news_db'
+* * DB_NAME='tech_blog_db'
 * * DB_USER='your-MySQL-username'
 * * DB_PW='your-MySQL-password'
 * * SECRET='your-secret'
-* use npm to install express, express-handlebars, express-session, express-session-sequelize, mysql2, sequelize, bcrpyt, jest (to use test functionality)
+* use npm to install express, express-handlebars, express-session, connect-session-sequelize, mysql2, sequelize, bcrpyt, jest (to use test functionality)
+* initialze database on MySQL server using schema file
+* start server with 'npm start' and view the result with 'localhost:3001'

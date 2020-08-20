@@ -4,9 +4,29 @@
   "description": "[Repository](https://github.com/josephptflanagan/200823-Tech-Blog)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephptflanagan/200823-Tech-Blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/josephptflanagan/200823-Tech-Blog/issues"
+  },
+  "homepage": "https://github.com/josephptflanagan/200823-Tech-Blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.17.1",
+    "jest": "^26.4.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.4"
+  }
 }
