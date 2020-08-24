@@ -2,21 +2,20 @@
 {{> post-info post}}
 
 {{#if loggedIn}}
+{{#if comments.length}}
+{{> comments post.comments}}
+{{/if}}
+<section class="card">
 <form class="comment-form">
   <div>
-    <textarea name="comment-body"></textarea>
+    <label for="comment-content">Comment</label>
+    <textarea class="card-input-textarea" id="comment-body" name="comment-body"></textarea>
   </div>
-
-  <div>
-    <button type="submit">add comment</button>
-    <button type="button" class="upvote-btn">upvote</button>
-  </div>
+  <button class="card-button" type="submit" class="btn" id="comment-btn">Create</button>
 </form>
+</section>
 {{/if}}
-
-{{> comments post.comments}}
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>
 {{/if}}

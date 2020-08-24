@@ -7,6 +7,7 @@ async function commentFormHandler(event) {
     ];
 
     if (comment_text) {
+        console.log(comment_text)
         const response = await fetch('/api/comments', {
             method: 'POST',
             body: JSON.stringify({
@@ -26,4 +27,4 @@ async function commentFormHandler(event) {
     }
 }
 
-document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);
+document.querySelector('#comment-btn').addEventListener('submit', commentFormHandler);

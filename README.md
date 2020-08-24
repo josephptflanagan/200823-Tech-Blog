@@ -4,7 +4,7 @@
 [Repository](https://github.com/josephptflanagan/200823-Tech-Blog)
 
 ## Heroku Site
-[Heroku]()
+[Heroku](https://pacific-hamlet-81446.herokuapp.com/)
 
 ### Description
 A CMS-style tech blog similar to a wordpress site where developers can publish their blog posts and comment on other developers’ posts as well. Created to solidify ideas of ORM (Object Relational Mapping) and the MVC (Model-View-Controller) paradigm.

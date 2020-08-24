@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
   Post.findAll({
     attributes: [
       'id',
-      'post_url',
+      'post_content',
       'title',
       'created_at'
     ],
@@ -49,7 +49,7 @@ router.get('/post/:id', (req, res) => {
     },
     attributes: [
       'id',
-      'post_url',
+      'post_content',
       'title',
       'created_at'
     ],
@@ -94,6 +94,27 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+router.get('/sign-up', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('sign-up');
+});
+
+router.get('/new-post', (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  else{
+    res.render('new-post');
+  }
+
+  
 });
 
 module.exports = router;
