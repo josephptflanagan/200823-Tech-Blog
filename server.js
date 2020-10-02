@@ -24,9 +24,7 @@ const sess = {
 //middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.engine('handlebars', hbs.engine);
+app.use(express.static(path.join(__dirname, 'public')));app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use(session(sess));
 
